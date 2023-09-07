@@ -10,12 +10,10 @@ public class Test {
         String a = sc.next();
         char s = ' ';
         char m = ' ';
-        if (a.length() < 4 || a.length() > 20) {
+        if (a.length() < 5 || a.length() > 15) {
             s='f';
         }
-        else if (!a.matches("^[a-zA-Z0-9_]+$")) {
-            s='f';
-        }
+
         else if (a.contains(" ")) {
             s='f';
         }
@@ -26,12 +24,10 @@ public class Test {
         }
         System.out.println("Password:");
         String b = sc.next();
-        if (b.length() < 8 || b.length() > 20) {
+        if (b.length() < 8 || b.length() > 15) {
             m='f';
         }
-        else if (!b.matches("^[a-zA-Z0-9_]+$")) {
-            m='f';
-        }
+
         else if (b.contains(" ")) {
             m='f';
         }
